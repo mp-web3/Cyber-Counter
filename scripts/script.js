@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     countSpan.textContent = count;
   });
 });
+
+document.addEventListener(
+  "dblclick",
+  function (event) {
+    event.preventDefault();
+  },
+  { passive: false }
+);
